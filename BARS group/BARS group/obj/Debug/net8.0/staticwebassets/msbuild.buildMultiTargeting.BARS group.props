@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BARS group.props" />
+</Project>

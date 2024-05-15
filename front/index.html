@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>ToDo Items</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ToDo Items</h1>
+    <button class="btn btn-primary" id="add-todo-item-button">Добавить новое задание</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Название</th>
+                <th>Описание</th>
+                <th>Дата создания</th>
+                <th>Готово ли</th>
+            </tr>
+        </thead>
+        <tbody id="todo-items"></tbody>
+    </table>
+
+    <form id="add-todo-form" class="hidden">
+        <label for="title">Название:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="description">Описание:</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        <button type="submit" id="add-todo-button">Добавить</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+#add-todo-form {
+    transition: visibility 0.5s;
+}
+
+#add-todo-form.hidden {
+    visibility: hidden;
+}
+
+#add-todo-form:not(.hidden) {
+    visibility: visible;
+}
